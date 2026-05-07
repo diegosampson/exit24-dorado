@@ -372,7 +372,7 @@
 
     <!-- CONTACT -->
     <div class="card" id="contact">
-      <div class="card-header"><span class="card-title">Request Project Information</span><span class="card-badge badge-orange">ICSC 2025</span></div>
+      <div class="card-header"><span class="card-title">Request Project Information</span><span class="card-badge badge-orange">ICSC 2026</span></div>
       <div style="padding:14px;">
         <form class="form" id="contactForm">
           <div class="form-row">
@@ -405,7 +405,7 @@
         </form>
         <div class="form-success" id="formSuccess">
           <div class="form-success-title">Request Received</div>
-          <div class="form-success-text">Diego Sampson will follow up directly.<br>Reference: Exit 24 Dorado · ICSC 2025.</div>
+          <div class="form-success-text">Diego Sampson will follow up directly.<br>Reference: Exit 24 Dorado · ICSC 2026.</div>
         </div>
       </div>
     </div>
@@ -431,7 +431,7 @@
     btn.disabled = true; btn.textContent = 'Sending...';
     const d = new FormData(this);
     const subject = encodeURIComponent('Exit 24 Dorado — ' + d.get('firstName') + ' ' + d.get('lastName') + ' · ' + d.get('company'));
-    const body = encodeURIComponent('New inquiry — Exit 24 Dorado\n\nName: ' + d.get('firstName') + ' ' + d.get('lastName') + '\nCompany: ' + d.get('company') + '\nEmail: ' + d.get('email') + '\nPhone: ' + (d.get('phone')||'Not provided') + '\nUse Type: ' + d.get('tenantType') + '\n\nSource: exit24.sampsonre.com · ICSC 2025');
+    const body = encodeURIComponent('New inquiry — Exit 24 Dorado\n\nName: ' + d.get('firstName') + ' ' + d.get('lastName') + '\nCompany: ' + d.get('company') + '\nEmail: ' + d.get('email') + '\nPhone: ' + (d.get('phone')||'Not provided') + '\nUse Type: ' + d.get('tenantType') + '\n\nSource: exit24.sampsonre.com · ICSC 2026');
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
     setTimeout(function() { window.location.href = 'mailto:exit24@sampsonre.com?subject=' + subject + '&body=' + body; }, 600);
